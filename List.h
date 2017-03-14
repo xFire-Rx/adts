@@ -18,11 +18,12 @@ class List //begin List definition
      void insert(int element, int k);//insert element at location k
      void remove(int k);//remove element at location k
      int size();//return the number of elements in the List
-     
+     void display();
+     int getAt(int k);
      
      /** MISSING OPERATIONS */
      //... fill in ....
-
+	 
 };//end List definition
 
 #endif

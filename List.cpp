@@ -92,4 +92,15 @@ void List::remove(int k)
 	}
 	
 	//Implementations of missing operations
-	
+void List::display(){
+	for (Node* tmpPtr = frontPtr; tmpPtr != nullptr; tmpPtr = tmpPtr->link){
+		cout << tmpPtr->data << " " << endl;
+	}
+}
+ int List::getAt(int k){
+	Node* tmpPtr = frontPtr;
+	for(int loc =1; loc != k; loc++){
+		tmpPtr = tmpPtr->link;
+		}
+		return tmpPtr->data;
+	 }
